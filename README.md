@@ -107,8 +107,7 @@ install.packages(c("quantmod", "RSQLite", "DBI", "dplyr", "tidyr", "ggplot2", "q
 Execute the scripts in the following sequential order:
 
 1. **Extract Data:** Run `src/01_data_downloader.R` to fetch the 5-year historical prices and save them into the `data/` directory.
-2. **Build Database:** Run `src/02_database_setup.R` to aggregate the CSV files, compute the Tidy Data format, and initialize the SQLite database (`quant_portfolio.db`).
-3. **Optimize Portfolio:** Run `src/03_portfolio_optimization.R` to compute the statistical estimators ($\mu$ and $\Sigma$), execute the Monte Carlo simulation, and solve the exact optimal asset allocation.
+2. **Build Database and Optimize Portfolio:** Run `src/02_portfolio_optimization.R` to aggregate the CSV files, compute the Tidy Data format, initialize the SQLite database (`quant_portfolio.db`), compute the statistical estimators ($\mu$ and $\Sigma$), execute the Monte Carlo simulation, and solve the exact optimal asset allocation.
 
 ## 8. Future Enhancements
 
