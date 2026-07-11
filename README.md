@@ -36,6 +36,10 @@ $$\mathbb{E}[R_p] = w^T \mu$$
 $$\text{Var}(R_p) = w^T \Sigma w$$
 
 ## 4. Optimization via Quadratic Programming
+### Visualizing the Solution Space
+Below is the visualization of the Monte Carlo simulation generating 10,000 random portfolios. The color gradient represents the Sharpe Ratio, highlighting the transition towards optimal risk-adjusted returns.
+
+![Markowitz Efficient Frontier](assets/efficient_frontier.png)
 
 While Monte Carlo simulations (also implemented in this engine) provide an excellent visual mapping of the solution space, finding the exact Global Minimum Variance Portfolio requires solving a constrained convex optimization problem.
 
@@ -60,7 +64,6 @@ $$w_i \ge 0, \quad \forall i = 1, \dots, N$$
 
 
 The algorithm uses the `quadprog` package to translate these mathematical constraints into matrix format (binding an equality vector and an identity matrix) to iteratively find the exact minimum of the quadratic surface.
-Perfetto, completiamo il nostro *White Paper*. Avere una documentazione chiara su come installare ed eseguire il progetto è fondamentale: su GitHub, il 90% di chi visita una repository decide se fermarsi a leggere il codice basandosi esclusivamente sulla qualità delle istruzioni nel README.
 
 ## 5. Repository Structure
 
