@@ -78,8 +78,8 @@ The project is organized in a modular architecture to separate data extraction, 
 │   └── MC.PA.csv
 ├── src/
 │   ├── 01_data_downloader.R
-│   ├── 02_database_setup.R
-│   └── 03_portfolio_optimization.R
+│   ├── 02_portfolio_optimization.R
+│   
 ├── quant_portfolio.db      # SQLite database (generated locally)
 └── README.md
 
