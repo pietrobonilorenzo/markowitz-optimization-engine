@@ -1,6 +1,6 @@
 
 
-# Carica la libreria
+# Load the library
 library(quantmod)
 
 # Define of the tickers and the date
